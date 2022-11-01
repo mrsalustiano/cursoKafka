@@ -1,0 +1,29 @@
+sh-4.4$ kafka-topics --bootstrap-server localhost:9092 --delete --topic str-topic
+sh-4.4$ kafka-topics --bootstrap-server localhost:9092 --list
+__consumer_offsets
+sh-4.4$ kafka-topics --bootstrap-server localhost:9092 --delete --topic __consumer_offsets
+sh-4.4$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
