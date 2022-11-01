@@ -17,6 +17,7 @@ public class ErrorCustomHandler implements KafkaListenerErrorHandler {
         log.info("Headers : {} " ,message.getHeaders());
         log.info("offSet  : {} ", message.getHeaders().get("kafka_offset"));
         log.info("Message Exception  : {} ", e.getMessage());
+
         return null;
     }
 
