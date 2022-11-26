@@ -10,7 +10,7 @@
     </parent>
     <groupId>br.mrsalustiano</groupId>
     <artifactId>json-consumer</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.1</version>
     <name>json-consumer</name>
     <description>json-consumer</description>
     <properties>
