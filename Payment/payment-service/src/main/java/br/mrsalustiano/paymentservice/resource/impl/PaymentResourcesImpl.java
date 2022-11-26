@@ -4,6 +4,7 @@ import br.mrsalustiano.paymentservice.model.Payment;
 import br.mrsalustiano.paymentservice.resource.PaymentResource;
 import br.mrsalustiano.paymentservice.service.PaymentService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,6 +19,6 @@ class PaymentResourcesImpl implements PaymentResource {
     @Override
     public ResponseEntity<Payment> payment(Payment payment) {
         service.sendPayment(payment);
-        return ResponseEntity.ok().body(payment);
+        return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 }

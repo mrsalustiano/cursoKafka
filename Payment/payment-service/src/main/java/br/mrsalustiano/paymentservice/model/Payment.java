@@ -3,13 +3,15 @@ package br.mrsalustiano.paymentservice.model;
 
 import lombok.*;
 
+import java.io.Serializable;
+
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 @ToString
-public class Payment {
+public class Payment implements Serializable {
 
     private Long id;
     private Long idUser;
